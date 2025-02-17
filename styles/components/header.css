@@ -1,0 +1,9 @@
+.header {
+  grid-area: 1 / 1 / 2 / 3;
+  justify-self: center;
+
+  & h1 {
+    color: var(--accent-txt-color);
+    text-decoration: underline;
+  }
+}
