@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Expenses Tracker</h1>
+    </header>
+    <aside class="form" data-action="create">
+      <label for="date">
+        <span>Date</span>
+        <input type="date" id="date" />
+      </label>
+      <label for="desc">
+        <span>Description</span>
+        <input type="text" id="desc" />
+      </label>
+      <label for="amt">
+        <span>Amount</span>
+        <input type="number" inputmode="numeric" id="amt" />
+      </label>
+      <div class="buttons">
+        <button class="cancel">Cancel</button>
+        <button class="delete">Delete</button>
+        <button>Create</button>
+      </div>
+    </aside>
+    <main class="history"></main>
+  </body>
+</html>
