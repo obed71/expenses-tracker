@@ -43,7 +43,7 @@
         background-color: var(--accent-bg-color);
       }
 
-      &:is(:hover, :hover-visible) {
+      &:is(:hover, :focus-visible) {
         border-color: currentColor;
         background-color: transparent;
       }
