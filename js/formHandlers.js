@@ -63,7 +63,9 @@ export function render() {
 
 function renderBalance(historyEl) {
   historyEl.innerHTML += `
-    <button class="empty-expenses" onclick="emptyExpenses()">🚮</button>
+    <button class="empty-expenses" onclick="emptyExpenses()">
+      <i class="fa-solid fa-trash"></i>
+    </button>
     <div class="balance">
       <span>Balance :</span>
       <span class="${Expenses.balance >= 0 ? 'positive' : 'negative'} amt">
